@@ -7,8 +7,8 @@ public class Cust {
     private String lastname;
     private int ordernumber;
 
-    public Cust(int id, String firstname, String lastname, int order) {
-        this.id = id;
+    public Cust (String firstname, String lastname, int order) {
+
         this.firstname = firstname;
         this.lastname = lastname;
         this.ordernumber = ordernumber;

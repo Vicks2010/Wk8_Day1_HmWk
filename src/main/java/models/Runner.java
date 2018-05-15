@@ -1,5 +1,7 @@
 package models;
 
+import db.DBCust;
+
 import java.util.List;
 
 public class Runner {
@@ -9,8 +11,8 @@ public class Runner {
         {
         }
 
-        Cust cust1 = new Cust(id1,"Cust1FirstName", "Cust1LastName", ordernumber1);
-        Cust cust2 = new Cust(id2,"Cust2FirstName", "Cust2LastName", ordernumber2);
+        Cust cust1 = new Cust("Cust1FirstName", "Cust1LastName", 1);
+        Cust cust2 = new Cust("Cust2FirstName", "Cust2LastName", 2);
 
         DBCust.save(cust1);
         DBCust.save(cust2);
