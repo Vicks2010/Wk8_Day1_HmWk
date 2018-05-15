@@ -5,15 +5,13 @@ public class Cust {
     private int id;
     private String firstname;
     private String lastname;
+    private int ordernumber;
 
-    public Cust(int id, String firstname, String lastname) {
+    public Cust(int id, String firstname, String lastname, int order) {
         this.id = id;
         this.firstname = firstname;
         this.lastname = lastname;
-    }
-
-    public Cust(){
-
+        this.ordernumber = ordernumber;
     }
 
     public int getId() {
@@ -39,4 +37,13 @@ public class Cust {
     public void setLastname(String lastname) {
         this.lastname = lastname;
     }
+
+    public int getOrdernumber() {
+        return ordernumber;
+    }
+
+    public void setOrdernumber(int ordernumber) {
+        this.ordernumber = ordernumber;
+    }
 }
+
